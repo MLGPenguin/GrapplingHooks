@@ -73,7 +73,7 @@ class GrapplingHook(plugin: GrapplingHooksMain): Listener, CommandExecutor {
         // When they reel in a fishing rod, check that they are grappling.
         } else if (event.state == PlayerFishEvent.State.REEL_IN && uuid in grappling) {
             // Get a vector pointing from the player to the fishing hook and add it to the players existing velocity.
-            val additionalVelocity = event.hook.location.toVector().subtract(event.player.location.toVector()).normalize().multiply(POWER)
+            val additionalVelocity = event.hook.location.subtract(event.player.location).toVector().normalize().multiply(POWER)
             event.player.velocity = event.player.velocity.add(additionalVelocity)
             grappling.remove(uuid)
 

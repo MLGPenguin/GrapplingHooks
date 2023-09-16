@@ -1,3 +1,4 @@
+( This is a tutorial for the LearnSpigot plugin course commmunity )
 # GrapplingHooks
 
 Grappling hooks are a fantastic cosmetic or item for your server that allow players to throw themselves around like rag dolls.
